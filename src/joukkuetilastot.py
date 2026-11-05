@@ -18,7 +18,7 @@ def normalisoi(data):
 
 def modify(data):
     # Todellinen heittoprosentti NBA määritelmällä
-    data['tsp'] = data['total_points'] / \
+    data['ts'] = data['total_points_for'] / \
         (2 * (data['total_fga'] + 0.44 * data['total_fta']))
 
     return data
