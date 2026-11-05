@@ -1,6 +1,7 @@
 # pena
 
 - [Tietoa](#tietoa)
+- [Lisenssi](#lisenssi)
 
 ## Tietoa
 
