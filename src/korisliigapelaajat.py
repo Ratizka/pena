@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 import requests
 import pandas as pd
@@ -24,7 +25,8 @@ def modify(data):
 
 
 def tallennaCSV(df):
-    df.to_csv(f"{os.getcwd()}/data/pelaajadata.csv", index = False)
+    df.to_csv(
+        f"{Path(__file__).parent.parent.resolve()}/data/pelaajadata.csv", index=False)
     
 
 def main():
