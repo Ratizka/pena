@@ -20,6 +20,9 @@ def modify(data):
     # Todellinen heittoprosentti NBA määritelmällä
     data['ts'] = data['total_points'] / \
         (2 * (data['total_fga'] + 0.44 * data['total_fta']))
+        
+    data['eFG'] = (data['total_fgm']+(0.5*data['total_s_3m'])) / \
+        data['total_fga']
     
     return data
 
